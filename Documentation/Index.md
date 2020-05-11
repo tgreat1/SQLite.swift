@@ -184,6 +184,16 @@ applications.
     .package(url: "https://github.com/stephencelis/SQLite.swift.git", from: "0.12.0")
   ]
   ```
+  and
+  ```swift
+  targets: [
+    .target(
+        name: "YourPackageName",
+        dependencies: [
+            .product(name: "SQLite", package: "SQLite.swift")
+        ]),
+  ```
+  
 
  2. Build your project:
 
